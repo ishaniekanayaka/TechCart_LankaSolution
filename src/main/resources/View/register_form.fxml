@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.RegisterFormController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wNi1rc2g2bXZ2bi5qcGc.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f1e51" height="520.0" layoutX="261.0" layoutY="40.0" opacity="0.32" stroke="#6f1e51" strokeType="INSIDE" width="378.0" />
+      <Text layoutX="309.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tech Cart Lanka Solution" underline="true">
+         <font>
+            <Font name="KacstArt" size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.32857142857142857" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#b53471" />
+                  <Stop color="#ffc9ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <TextField fx:id="txtAdminId" layoutX="321.0" layoutY="185.0" prefHeight="25.0" prefWidth="259.0" promptText="Admin ID" style="-fx-background-color: #FDA7DF;" />
+      <TextField fx:id="txtUsername" layoutX="320.0" layoutY="267.0" prefWidth="259.0" promptText="Username" style="-fx-background-color: #FDA7DF;" />
+      <TextField fx:id="txtPassword" layoutX="320.0" layoutY="349.0" prefWidth="259.0" promptText="Passwoard" style="-fx-background-color: #FDA7DF;" />
+      <Text fill="#fda7df" layoutX="320.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin ID" />
+      <Text fill="#fda7df" layoutX="320.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text fill="#fda7df" layoutX="320.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passwoard" />
+      <JFXButton buttonType="RAISED" layoutX="386.0" layoutY="408.0" onAction="#btnRegisterOnAction" prefHeight="36.0" prefWidth="128.0" style="-fx-background-color: #B53471;" text="  Register" textFill="#fcbde7" />
+      <ImageView fitHeight="36.0" fitWidth="31.0" layoutX="394.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/icons8-register-100.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
