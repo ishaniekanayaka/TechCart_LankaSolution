@@ -1,69 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.LoginFormController">
+<AnchorPane fx:id="rootNode" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.LoginFormController">
    <children>
-      <ImageView fitHeight="602.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="694.0" fitWidth="1125.0" layoutX="-7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Icons/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wNi1rc2g2bXZ2bi5qcGc.jpg" />
+            <Image url="@../Icons/desktop-wallpaper-backgrounds-bank-bank-afari-bank-account.jpg" />
          </image>
-         <effect>
-            <GaussianBlur />
-         </effect>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6f1e51" height="520.0" layoutX="261.0" layoutY="40.0" opacity="0.32" stroke="#833471" strokeDashOffset="20.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="378.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#374857" height="494.0" layoutX="317.0" layoutY="96.0" opacity="0.5" stroke="#374857" strokeType="INSIDE" width="470.0">
          <effect>
             <DropShadow />
          </effect>
       </Rectangle>
-      <TextField fx:id="txtId" layoutX="321.0" layoutY="208.0" prefHeight="25.0" prefWidth="259.0" promptText="Admin ID" style="-fx-background-color: #FDA7DF;" />
-      <Text layoutX="321.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechCart Lanka Solution" underline="true">
-         <fill>
-            <LinearGradient endX="1.0" endY="0.3142857142857142" startX="1.0" startY="1.0">
-               <stops>
-                  <Stop color="#b53471" />
-                  <Stop color="#ffc9ed" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
-         <font>
-            <Font name="FreeSans" size="24.0" />
-         </font>
+      <TextField fx:id="txtUserId" layoutX="417.0" layoutY="280.0" prefHeight="30.0" prefWidth="270.0" promptText="User ID" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
          <effect>
-            <DropShadow />
-         </effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+      <Text fill="#f5accf" layoutX="417.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fill="#f5accf" layoutX="417.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <PasswordField fx:id="txtPassword" layoutX="417.0" layoutY="369.0" prefHeight="30.0" prefWidth="270.0" promptText="Password" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect></PasswordField>
+      <Text fill="#fffefe" layoutX="493.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME">
+         <font>
+            <Font name="FreeMono Bold" size="24.0" />
+         </font>
       </Text>
-      <Text fill="#fda7df" layoutX="321.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin ID" />
-      <Text fill="#fda7df" layoutX="321.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <PasswordField fx:id="txtPassword" layoutX="321.0" layoutY="295.0" prefHeight="25.0" prefWidth="259.0" promptText="Password" style="-fx-background-color: #FDA7DF;" />
-      <JFXButton buttonType="RAISED" layoutX="386.0" layoutY="364.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="128.0" style="-fx-background-color: #B53471;" text="Login" textFill="#fcbde7" underline="true">
-         <font>
-            <Font name="Georgia Italic" size="14.0" />
-         </font>
-         <effect>
-            <DropShadow />
-         </effect>
-      </JFXButton>
-      <Text fill="#fda7df" layoutX="341.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an Account?" />
-      <Hyperlink layoutX="496.0" layoutY="417.0" onAction="#linkRegistrationOnAction" text="Register" />
-      <ImageView fitHeight="36.0" fitWidth="25.0" layoutX="395.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="599.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Icons/login.png" />
+            <Image url="@../Icons/icons8-welcome-48.png" />
          </image>
       </ImageView>
+      <Text fill="#fffdfd" layoutX="445.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechCartLanka Solution">
+         <font>
+            <Font name="FreeSerif" size="24.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="497.0" layoutY="463.0" onAction="#btnLoginOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="LOGIN" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>
