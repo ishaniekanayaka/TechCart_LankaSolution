@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNodeCusPayment" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: #090e36;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.PaymentFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#494e72" height="484.0" layoutX="62.0" layoutY="124.0" opacity="0.42" stroke="#f2eaea" strokeType="INSIDE" width="407.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Label layoutX="141.0" layoutY="166.0" text="Payment Form ">
+         <font>
+            <Font name="FreeMono Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6447368264198303" green="0.2895345985889435" blue="0.2895345985889435" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.6401072144508362" blue="0.8655864000320435" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TableView fx:id="tblCustomerPayment" layoutX="530.0" layoutY="157.0" prefHeight="219.0" prefWidth="513.0">
+        <columns>
+          <TableColumn fx:id="colPaymentId" prefWidth="104.0" text="PaymentId" />
+          <TableColumn fx:id="colAmount" prefWidth="130.0" text="Amount" />
+            <TableColumn fx:id="colDate" prefWidth="141.0" text="Date" />
+            <TableColumn fx:id="colMethod" prefWidth="137.0" text="Method" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="758.0" layoutY="585.0" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #042509;" text="  BACK" textFill="#fdfffd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-log-out-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e5a86" height="42.0" layoutX="278.0" layoutY="34.0" opacity="0.89" stroke="BLACK" strokeType="INSIDE" width="545.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Text fill="#dd9f65" layoutX="313.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechCartLanka Solution" textAlignment="CENTER">
+         <font>
+            <Font name="FreeMono Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="49.0" fitWidth="53.0" layoutX="366.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/icons8-payment-96.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPaymentId" layoutX="130.0" layoutY="261.0" onAction="#txtSearchOnAction" prefHeight="30.0" prefWidth="270.0" promptText="Payment ID" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="130.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAmount" layoutX="131.0" layoutY="339.0" prefHeight="30.0" prefWidth="270.0" promptText="amount" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="131.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDate" layoutX="134.0" layoutY="423.0" prefHeight="30.0" prefWidth="270.0" promptText="Payment date" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="131.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtMethod" layoutX="130.0" layoutY="510.0" prefHeight="30.0" prefWidth="270.0" promptText="Payment Method" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="130.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mathod">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="622.0" layoutY="438.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="SAVE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-save-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="622.0" layoutY="510.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="CLEAR" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-clear-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="863.0" layoutY="510.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="DELETE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-delete-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="854.0" layoutY="438.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="UPDATE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-update-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

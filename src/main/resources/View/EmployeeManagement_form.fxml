@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNoteEmployee" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: #090e36;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.EmployeeManagementFormController">
+    <children>
+        <TableView fx:id="tblEmployeeManagement" layoutX="73.0" layoutY="369.0" prefHeight="238.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="113.0" text="Employee ID" />
+                <TableColumn fx:id="colSalary" prefWidth="119.0" text="Salary" />
+                <TableColumn fx:id="colName" prefWidth="162.0" text="E_name" />
+                <TableColumn fx:id="colPosition" prefWidth="138.0" text="Position" />
+                <TableColumn fx:id="colContact_num" prefWidth="165.0" text="Contact" />
+                <TableColumn fx:id="colEmail" prefWidth="153.0" text="Email" />
+            </columns>
+        </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e5a86" height="42.0" layoutX="278.0" layoutY="27.0" opacity="0.89" stroke="BLACK" strokeType="INSIDE" width="545.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Text fill="#dd9f65" layoutX="313.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechCartLanka Solution" textAlignment="CENTER">
+         <font>
+            <Font name="FreeMono Bold" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#494e72" height="265.0" layoutX="73.0" layoutY="79.0" opacity="0.42" stroke="#f2eaea" strokeType="INSIDE" width="792.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Label layoutX="154.0" layoutY="89.0" text="Employee Form">
+         <font>
+            <Font name="FreeMono Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6447368264198303" green="0.2895345985889435" blue="0.2895345985889435" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.6401072144508362" blue="0.8655864000320435" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="401.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/icons8-employee-100.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmployeeId" layoutX="104.0" layoutY="169.0" onAction="#txtSearchOnAction" prefHeight="30.0" prefWidth="270.0" promptText="Employee ID" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="104.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="104.0" layoutY="236.0" prefHeight="30.0" prefWidth="270.0" promptText="Name" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="104.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSalary" layoutX="104.0" layoutY="304.0" prefHeight="30.0" prefWidth="270.0" promptText="Salary" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="104.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContactNum" layoutX="547.0" layoutY="169.0" prefHeight="30.0" prefWidth="270.0" promptText="Contact number" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="547.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact number:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtPosition" layoutX="547.0" layoutY="236.0" prefHeight="30.0" prefWidth="270.0" promptText="Position" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="547.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="547.0" layoutY="304.0" prefHeight="30.0" prefWidth="270.0" promptText="Email" style="-fx-background-color: #F #f8dcdc #f8dcdcA7DF;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TextField>
+      <Text fill="#f5accf" layoutX="547.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="946.0" layoutY="482.0" onAction="#btnBackOnAction" prefHeight="40.0" prefWidth="118.0" style="-fx-background-color: #042509;" text="  BACK" textFill="#fdfffd">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-log-out-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton layoutX="940.0" layoutY="141.0" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="SAVE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-save-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="940.0" layoutY="198.0" onAction="#btnClearOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="CLEAR" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-clear-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="940.0" layoutY="317.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="DELETE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-delete-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="940.0" layoutY="257.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #B53471;" text="UPDATE" textFill="#f2ebeb">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-update-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9098039269447327" green="0.4627451002597809" blue="0.4627451002597809" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

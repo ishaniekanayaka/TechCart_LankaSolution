@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootDashboard" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="762.0" fitWidth="1100.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/hardware-computer-repair-service.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#374857" height="580.0" layoutX="29.0" layoutY="83.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="319.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2e5a86" height="42.0" layoutX="365.0" layoutY="23.0" opacity="0.89" stroke="BLACK" strokeType="INSIDE" width="545.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <Text fill="#dd9f65" layoutX="389.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechCartLanka Solution" textAlignment="CENTER">
+         <font>
+            <Font name="FreeMono Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="58.0" layoutY="176.0" onAction="#btnCustomerOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text=" Customer Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-customer-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="227.0" onAction="#btnCustomerServiceOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="    Customer Service" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/customer-service.214x256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="277.0" onAction="#btnPaymentOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="   Payment Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-payment-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="328.0" onAction="#btnDeliveryOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="  Delivery Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-delivery-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="377.0" onAction="#btnSupplierOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="  Supplier Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-supplier-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="426.0" onAction="#btnItemOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="   Item Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-item-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="476.0" onAction="#btnEmployeeOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="  Employee Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-employee-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="58.0" layoutY="527.0" onAction="#btnOrderOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text="  Order Management" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-logistics-32.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#486d8d" height="100.0" layoutX="437.0" layoutY="110.0" opacity="0.67" stroke="BLACK" strokeType="INSIDE" width="200.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <AnchorPane layoutX="437.0" layoutY="149.0" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: #073761;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="53.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-add-male-user-group-80%20(2).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblCustomerCount" layoutX="83.0" layoutY="12.0" prefHeight="39.0" prefWidth="83.0">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor></Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="461.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Count">
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#486d8d" height="100.0" layoutX="729.0" layoutY="111.0" opacity="0.67" stroke="BLACK" strokeType="INSIDE" width="200.0">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </Rectangle>
+      <AnchorPane layoutX="729.0" layoutY="150.0" prefHeight="63.0" prefWidth="200.0" style="-fx-background-color: #073761;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="53.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-purchase-order-96.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblOrderCount" layoutX="86.0" layoutY="12.0" prefHeight="39.0" prefWidth="83.0">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor></Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="770.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Count">
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="58.0" layoutY="123.0" onAction="#btnRegistrationOnAction" prefHeight="40.0" prefWidth="260.0" style="-fx-background-color: #2e5a86;" text=" Register" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-register-80.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text fill="#dd9f65" layoutX="139.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="42.0" fitWidth="39.0" layoutX="95.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/icons8-dashboard-100.png" />
+         </image>
+      </ImageView>
+      <PieChart layoutX="429.0" layoutY="254.0" prefHeight="400.0" prefWidth="560.0" />
+      <BarChart fx:id="chart" layoutX="376.0" layoutY="238.0" prefHeight="400.0" prefWidth="669.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXButton layoutX="120.0" layoutY="594.0" onAction="#btnExitOnAction" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: #374857;" text="EXIT" textFill="#f2ecec">
+         <font>
+            <Font name="FreeMono Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-log-out-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
